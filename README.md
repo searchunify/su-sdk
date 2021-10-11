@@ -1,15 +1,14 @@
 # SearchUnify SDK
 
 ## Overview
-The SearchUnify SDK enables developers to easily work with the SearchUnify
-platform and build scalable solutions with search, analytics, crawlers and more. You
+The SearchUnify SDK enables developers to easily work with the SearchUnify platform and build scalable solutions with search, analytics, crawlers and more. You
 can get started in minutes using NPM.
 The SearchUnify SDK simplifies use of SearchUnify Services by providing a set of
 libraries that are consistent and familiar for the developers. It provides support for API lifecycle consideration such as credential management, retries, data marshaling, and serialization. The SearchUnify SDKs also support higher level abstractions for simplified development.
 
 ## Key Features
 * HTTP/2 Support and pluggable HTTP layer, new programming interfaces seamlessly take advantage of HTTP/2 features and provide new ways to build applications.
-* Nonblocking I/O, the SearchUnify SDK for Java utilizes a new, nonblocking SDK architecture to support true nonblocking I/O. It features truly non blocking asynchronous clients that implement high concurrency across a few threads.
+* Nonblocking I/O, the SearchUnify SDK for Javascript utilizes a new, nonblocking SDK architecture to support true nonblocking I/O. It features truly non blocking asynchronous clients that implement high concurrency across a few threads.
 
 ## Getting Started
 Sign up for SearchUnify, before you begin, you need a SearchUnify account. Please see the oAuth section of the developer guide for information about how to retrieve your SearchUnify credentials.
