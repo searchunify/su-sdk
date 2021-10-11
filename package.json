@@ -1,0 +1,23 @@
+{
+  "name": "su-sdk",
+  "version": "1.0.0",
+  "description": "SearchUnify javascript software development kit.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:searchunify/su-sdk.git"
+  },
+  "keywords": [
+    "searchunify",
+    "sdk"
+  ],
+  "author": "SearchUnify",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "joi": "^17.4.0"
+  }
+}
