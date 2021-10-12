@@ -1,10 +1,8 @@
 # SearchUnify SDK
 
 ## Overview
-The SearchUnify SDK enables developers to easily work with the SearchUnify platform and build scalable solutions with search, analytics, crawlers and more. You
-can get started in minutes using NPM.
-The SearchUnify SDK simplifies use of SearchUnify Services by providing a set of
-libraries that are consistent and familiar for the developers. It provides support for API lifecycle consideration such as credential management, retries, data marshaling, and serialization. The SearchUnify SDKs also support higher level abstractions for simplified development.
+The SearchUnify SDK enables developers to easily work with the SearchUnify platform and build scalable solutions with search, analytics, crawlers and more. You can get started in minutes using NPM.
+The SearchUnify SDK simplifies use of SearchUnify Services by providing a set of libraries that are consistent and familiar for the developers. It provides support for API lifecycle consideration such as credential management, retries, data marshaling, and serialization. The SearchUnify SDKs also support higher level abstractions for simplified development.
 
 ## Key Features
 * HTTP/2 Support and pluggable HTTP layer, new programming interfaces seamlessly take advantage of HTTP/2 features and provide new ways to build applications.
@@ -18,7 +16,7 @@ SDK requires [Node.js](https://nodejs.org/) to run.
 Install the dependencies and devDependencies and start the server.
 
 ## Execution
-Initiate SU SDK on Server, SearchUnify provides SDK for JavaScript. Using the SDK, you can route search requests. To start using, initialize the SDK with your URL and API key.
+Initiate SearchUnify javascript SDK on Server. Using the SDK, you can route search requests. To start using, initialize the SDK with your URL and API key.
 ```javascript
 const { SearchUnifyApiClient } = require('su-sdk');
 const apiKey = "key";
