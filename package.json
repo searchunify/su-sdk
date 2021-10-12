@@ -1,6 +1,6 @@
 {
   "name": "su-sdk",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "SearchUnify javascript software development kit.",
   "main": "index.js",
   "scripts": {
