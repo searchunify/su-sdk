@@ -7,4 +7,4 @@ exports.HttpRequest = async (options) => {
     } catch (error) {
         throw new Error(error);
     }
-}
+};
