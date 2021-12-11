@@ -1,14 +1,13 @@
-
 exports.contextObject = {
     apiKey: {
         enable: false,
         instanceUrl: '',
-        apiKey: ''
+        apiKey: '',
     },
     provisionKey: {
         enable: false,
         instanceUrl: '',
-        accessToken: ''
+        accessToken: '',
     },
     oauth: {
         enable: false,
@@ -16,6 +15,6 @@ exports.contextObject = {
         clientId: '',
         secret: '',
         username: '',
-        password: ''
-    }
-}
+        password: '',
+    },
+};

@@ -4,6 +4,7 @@
   "description": "SearchUnify javascript software development kit.",
   "main": "index.js",
   "scripts": {
+    "prettier": "npx prettier@2.x -w '**/*.{js,md}'",
     "start": "node index.js"
   },
   "repository": {

@@ -1,7 +1,7 @@
 const { searchResultWebsiteClient } = require('./components/search/search');
-const { WebsiteSearchValidation } = require("./validators/search.validations");
-const { ProvisionKeyValidation } = require("./validators/auth.validations");
-const { contextObject } = require("./utils/authType");
+const { WebsiteSearchValidation } = require('./validators/search.validations');
+const { ProvisionKeyValidation } = require('./validators/auth.validations');
+const { contextObject } = require('./utils/authType');
 
 /**
  * @author Mohan Rana
@@ -16,8 +16,8 @@ exports.SearchUnifyApiClient = function (instanceUrl, apiKey) {
         let params = {
             enable: true,
             instanceUrl: instanceUrl,
-            accessToken: apiKey
-        }
+            accessToken: apiKey,
+        };
         const isValid = ProvisionKeyValidation(params);
         if (isValid.error) {
             throw new Error(isValid.error.message);
@@ -25,27 +25,26 @@ exports.SearchUnifyApiClient = function (instanceUrl, apiKey) {
         // add required context for other methods.
         contextObject.provisionKey = isValid.value;
         return {
-            search
-        }
+            search,
+        };
     } catch (error) {
         throw new Error(error);
     }
-}
+};
 
 /**
  * @author Mohan Rana
- * @param {Object} params 
+ * @param {Object} params
  * @summary This method is used to get result from searchunify instance.
  */
 
 const search = async (params) => {
     try {
         const isValid = await WebsiteSearchValidation(params);
-        if (isValid.error)
-            throw new Error(isValid.error.message);
+        if (isValid.error) throw new Error(isValid.error.message);
         let response = await searchResultWebsiteClient(isValid.value);
         return response;
     } catch (error) {
         throw new Error(error);
     }
-}
+};
