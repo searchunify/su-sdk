@@ -42,20 +42,24 @@ Initiate SearchUnify javascript SDK on Server. Using the SDK, you can route
 search requests. To start using, initialize the SDK with your URL and API key.
 
 ```js
+'use strict';
+
 const { SearchUnifyApiClient } = require('su-sdk');
 const apiKey = 'key';
 const instanceUrl = 'https://api.searchunify.com';
 const searchunify = new SearchUnifyApiClient(instanceUrl, apiKey);
-server.post('/api/searchunify/search', async (req, res, next) => {
-    try {
+
+app.post('/api/searchunify/search', function (req, res, next) {
+    Promise.then(async function () {
         let response = await searchunify.search(req.body);
-        return res.json(response);
-    } catch (error) {
-        console.log('Exception ${error.message}');
-        return res
-            .status(422)
-            .json({ status: false, message: 'error message' });
-    }
+        res.json(response);
+    }).catch(next);
+});
+
+app.use('/', function (err, req, res, next) {
+    console.error(`Exception ${err.message}`);
+    res.status(422);
+    res.json({ status: false, message: 'error message' });
 });
 ```
 
